@@ -43,3 +43,10 @@ cy.get('myBtn').click()
 cy.wait('@postRoute')
 
 ```
+
+## Contains or not contains text within a class
+
+```
+  cy.get('.className').contains('test')
+  cy.get('.className').contains('test').should("not.exist")
+```
